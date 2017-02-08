@@ -1,0 +1,12 @@
+{% extends 'EventMate/baseinicio.html' %}
+
+{% block content %}
+
+	 <h1>Registro</h1>
+				<div class="div-form">
+				<form method="POST" action='' enctype="multipart/form-data" class="post-form">
+					{% csrf_token %}
+		            {{ form.as_p }}
+	          		<button type="submit">Registrar</button>
+     </form>
+{% endblock content %}

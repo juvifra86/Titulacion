@@ -1,0 +1,88 @@
+{% extends 'EventMate/baseinicio.html' %}
+
+{% block content %}
+
+	 <div class="banner">
+					<div id="kb" class="carousel kb_elastic animate_text kb_wrapper" data-ride="carousel" data-interval="6000" data-pause="hover">
+						<!-- Wrapper-for-Slides -->
+						<div class="carousel-inner" role="listbox"> 
+							<!-- First-Slide -->
+							<div class="item active">
+								<div class="banner-img"> 
+									<!--div class="carousel-caption kb_caption">
+										<h3 data-animation="animated flipInX">Real estate</h3>  
+									</div-->
+								</div>
+							</div> 
+							<!-- Second-Slide -->
+							<div class="item">
+								<div class="banner-img banner-img1"> 
+									<!--div class="carousel-caption kb_caption kb_caption_right">
+										<h3 data-animation="animated flipInX">Dream Home</h3> 
+									</div-->
+								</div>
+							</div> 
+							<!-- Third-Slide -->
+							<div class="item">
+								<div class="banner-img banner-img2"> 
+									<!--div class="carousel-caption kb_caption kb_caption_center">
+										<h3 data-animation="animated flipInX">Latest Design</h3> 
+									</div-->
+								</div>
+							</div> 
+						</div> 
+						<!-- Left-Button -->
+						<a class="left carousel-control kb_control_left" href="#kb" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+							<span class="sr-only">Anterior</span>
+						</a> 
+						<!-- Right-Button -->
+						<a class="right carousel-control kb_control_right" href="#kb" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+							<span class="sr-only">Siguiente</span>
+						</a> 
+					</div>
+					
+				</div>
+				<!-- //banner -->
+				<!-- welcome -->
+				<div class="welcome"> 
+				<!--{% if latest_tarea_list %}
+						    <ul>
+						    {% for tarea in latest_tarea_list %}
+							<li>{{ tarea.descripcion}}</li>
+						    {% endfor %}
+						    </ul>
+						{% else %}
+						    <p>Sin Tareas</p>
+						{% endif %}-->
+					<h3 class="w3ls-title">Bienvenid@ </h3>
+					<!--p class="w3title-text">Sed porta magna vitae nisl lacinia orbi malesuada sollic itudin tortor </p-->
+					<div class="welcome-info">
+						<div class="login-form">
+								<form method="post" >{% csrf_token %}
+									<div class="styled-input">
+										<input name="username" type="text" name="Username" required=""/>
+										<label>NickName</label>
+										<span></span>
+									</div>
+									<div class="styled-input">
+										<input name="password" type="password" name="Password" required=""> 
+										<label>Contraseña</label>
+										<span></span>
+									</div> 
+									<div class="wthree-text"> 
+										<!--ul> 
+											<li> <a href="recuperarcontraseña.html"">Recuperar Contraseña</a> </li>
+										</ul-->
+										<div class="clear"> </div>
+									</div> 
+									<input type="submit" value="Entrar">		
+								</form> 	
+								<p>Aun no eres usuario<a href="{% url 'EventMate:post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span>Registrarse</a></p>
+							</div> 
+							
+						</div>  
+					</div>  	
+		</div> 
+{% endblock content %}

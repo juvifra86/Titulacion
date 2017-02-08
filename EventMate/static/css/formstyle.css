@@ -1,0 +1,33 @@
+.div-form{
+	border-color: blue;
+	width: 60%;
+	left: 40%;
+}
+.post-form input {
+    width: 100%;
+    font-family: sans-serif;
+    font-family:verdana,arial;     /* tipo de letra */  
+    /*width: 80%;                  anchura de campos de formulario */  
+    font-size:8pt;                /* tamaño de la letra*/   
+    color:#008000;                 /* color del texto */   
+    border: 2% dotted red;        /* color del borde puede ser solid ó dotted */   
+    background-color:#FFD1DC;    /* color del fondo */   
+}  
+
+.post-form label{
+    width: 60%;
+    font-family: sans-serif;
+    font-family:verdana,arial;
+    font-size:8pt;
+}
+
+.post-form button{ 
+    font-size:12px; 
+    font-family:Verdana,Helvetica; 
+    font-weight:bold; 
+    color:#000000; 
+    background:#FF6961; 
+    border:0px; 
+    width:120px; 
+    height:25px; 
+}
