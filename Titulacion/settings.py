@@ -77,11 +77,10 @@ WSGI_APPLICATION = 'Titulacion.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'EventMate',
-        'USER': 'root',
-        'PASSWORD': 'kolobos',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'NAME': 'juvifra86$EventMate',
+        'USER': 'juvifra86',
+        'PASSWORD': 'kolobos30',
+        'HOST': 'juvifra86.mysql.pythonanywhere-services.com',
     }
 }
 
