@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'Titulacion.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'juvifra86$EventMate': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'juvifra86$EventMate',
         'USER': 'juvifra86',
